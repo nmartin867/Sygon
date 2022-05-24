@@ -5,26 +5,21 @@ public class MainMenu : MonoBehaviour
 {
     
     public string hostGameScene;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string joinGameScene;
+    public string optionsGameScene;
     
     public void HostNewGame()
     {
         SceneManager.LoadScene(hostGameScene);
     }
 
+    public void JoinGame()
+    {
+        SceneManager.LoadScene(joinGameScene);
+    }
     public void OpenOptions()
     {
-        
+        SceneManager.LoadScene(optionsGameScene);
     }
 
     public void CloseOptions()
